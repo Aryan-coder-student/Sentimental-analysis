@@ -25,7 +25,7 @@ def preprocess_sentence(sen):
 st.title("Emotion Classification")
 
 
-with open("model/emotions.pkl", "rb") as f:
+with open("emotions.pkl", "rb") as f:
     rf_classifier, tfidf_vectorizer = pickle.load(f)
 
 text_input = st.text_input("Enter text:", "")
